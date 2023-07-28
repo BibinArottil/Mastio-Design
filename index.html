@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Matsio</title>
+    <link href="style.css" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <!-- navbar start -->
+    <nav>
+      <div class="small-nav">
+        <div class="nav-contact">
+          <p class="phone">
+            <i class="fa-solid fa-phone" style="color: #40a5a2"></i>+91
+            9876543210<span class="line">|</span>
+          </p>
+          <p class="mail">
+            <i class="fa-solid fa-envelope" style="color: #40a5a2"></i
+            >contact@sample.ie<span class="line">|</span>
+          </p>
+          <p class="time">
+            <i class="fa-regular fa-clock" style="color: #40a5a2"></i>Mon-Thu:
+            8:00 am to 9:00 pm
+          </p>
+        </div>
+        <div class="nav-connect">
+          <p><i class="fa-brands fa-facebook" style="color: #ffffff"></i></p>
+          <p><i class="fa-brands fa-twitter" style="color: #ffffff"></i></p>
+          <p><i class="fa-brands fa-linkedin-in" style="color: #ffffff"></i></p>
+        </div>
+      </div>
+      <div class="nav-details">
+        <img class="logo" src="/image/Book_check.jpg" alt="logo" />
+        <div class="nav-details-data">
+          <ul id="menuList">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Order company</a></li>
+            <li><a href="#">Apply for Tax Rebate</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </div>
+        <img
+          src="/image//Menu_icon.png"
+          class="menu-icon"
+          alt="icon"
+          onclick="togglemenu()"
+        />
+      </div>
+    </nav>
+    <!-- nvabar end -->
+
+    <!-- login form start -->
+    <div class="body-img">
+      <div class="col-1">
+        <div class="text-h1">
+          <h1>
+            Take The Right Step <br />
+            For Your Business
+          </h1>
+        </div>
+        <div class="text-p">
+          <p>
+            Tax Associate is a leading consultancy firm that provides <br />
+            simple, effective company registration, and accounting <br />
+            solutions to enterprises in Ireland.
+          </p>
+        </div>
+        <div class="text-button">
+          <button class="">Get Started</button>
+        </div>
+      </div>
+      <div class="col-2">
+        <form class="login-form">
+          <div>
+            <h1>Apply For Tax Rebate Now</h1>
+          </div>
+          <div class="form">
+            <div class="form-data">
+              <label>Name</label>
+              <input type="text" />
+            </div>
+            <div class="form-data">
+              <label>Email ID</label>
+              <input type="email" />
+            </div>
+            <div class="form-data">
+              <label>PPS Number</label>
+              <input type="number" />
+            </div>
+          </div>
+          <div class="check">
+            <input class="checkmark" type="checkbox" checked="checked" />
+            <p>
+              I have read & agreed to the authorisation <br />
+              and the <a href="">terms & conditions.</a>
+            </p>
+          </div>
+          <div>
+            <button class="form-button">
+              Apply<i
+                class="fa-solid fa-arrow-right fa-fade"
+                style="color: #ffffff"
+              ></i>
+            </button>
+          </div>
+        </form>
+      </div>
+    </div>
+    <!-- login form end -->
+
+    <!-- Services start -->
+    <div class="services">
+      <div class="start-up">
+        <div class="circle">
+          <i class="fa-regular fa-file-lines fa-2xl" style="color: #ffffff"></i>
+        </div>
+        <div>
+          <h2>Start Up Services</h2>
+        </div>
+        <div>
+          <p>
+            We support entrepreneurs to build their <br />
+            businesses by providing them with the ideal <br />
+            company formation legal services.
+          </p>
+        </div>
+      </div>
+      <div class="finance">
+        <div class="circle">
+          <i
+            class="fa-solid fa-money-bill-trend-up fa-2xl"
+            style="color: #ffffff"
+          ></i>
+        </div>
+        <div>
+          <h2>Finance & Accounting</h2>
+        </div>
+        <div>
+          <p>
+            We provide our clients with the best in the <br />
+            market, accounting, and financial services to <br />
+            help accelerate their business growth.
+          </p>
+        </div>
+      </div>
+      <div class="risk">
+        <div class="circle">
+          <i class="fa-solid fa-shield fa-2xl" style="color: #ffffff"></i>
+        </div>
+        <div>
+          <h2>Risk & Assurance</h2>
+        </div>
+        <div>
+          <p>
+            We offer risk and assurance services for new as <br />
+            well as established businesses to help them <br />
+            reduce risks and overcome any disruption.
+          </p>
+        </div>
+      </div>
+    </div>
+    <!-- Services end -->
+    <script>
+      let menuList = document.getElementById("menuList");
+      menuList.style.maxHeight = "0px";
+      function togglemenu() {
+        if (menuList.style.maxHeight == "0px") {
+          menuList.style.maxHeight = "200px";
+        } else {
+          menuList.style.maxHeight = "0px";
+        }
+      }
+    </script>
+  </body>
+</html>

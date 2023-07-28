@@ -1,0 +1,286 @@
+body {
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+  background-color: #ffffff;
+}
+
+.small-nav {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 2rem;
+  margin: 0;
+  justify-content: space-between;
+  background-color: #163651;
+}
+
+.nav-contact {
+  display: flex;
+  justify-content: flex-start;
+  color: #ffffff;
+  font-weight: 300;
+  font-size: 12px;
+}
+
+.nav-connect p {
+  cursor: pointer;
+}
+
+.pohne,
+.mail,
+.time,
+.line {
+  margin-left: 0.5rem;
+  color: #f2efe6;
+}
+
+.nav-connect {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.nav-details {
+  display: flex;
+  justify-content: space-between;
+  height: 4rem;
+  padding: 0 2rem;
+  margin: 0;
+}
+
+.nav-details-data {
+  flex: 1;
+  text-align: right;
+}
+
+.nav-details-data ul li {
+  list-style: none;
+  display: inline-block;
+  margin-left: 50px;
+}
+
+.nav-details-data ul {
+  padding-top: 5px;
+}
+
+.nav-details-data ul li a {
+  text-decoration: none;
+  color: #000;
+  font-size: 14px;
+}
+
+.nav-details-data ul li a:hover {
+  color: #40a5a2;
+}
+
+.menu-icon {
+  width: 45px;
+  height: 45px;
+  margin-top: 8px;
+  cursor: pointer;
+  display: none;
+  margin-left: 30px;
+}
+
+.logo {
+  width: 50px;
+  height: 50px;
+  margin-top: 5px;
+  cursor: pointer;
+}
+
+.body-img {
+  display: flex;
+  position: relative;
+  justify-content: space-between;
+  background-image: url("/image/Marketing-Executive.jpeg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  align-items: center;
+  height: 675px;
+}
+
+p {
+  margin: 7px;
+}
+
+.nav-contact i {
+  margin-right: 3px;
+}
+
+.col-1 {
+  padding: 8rem 3rem;
+  position: relative;
+}
+
+.col-2 {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.text-h1 {
+  font-weight: bolder;
+  font-size: 2rem;
+  color: #ffffff;
+  letter-spacing: 1px;
+}
+
+.text-p {
+  font-size: 18px;
+  font-weight: 300;
+  color: #ffffff;
+  line-height: 1.5;
+}
+
+.text-button {
+  margin: 3rem 0;
+}
+
+.text-button button {
+  font-size: 1.1rem;
+  font-weight: bold;
+  padding: 12px 20px;
+  border-radius: 25px;
+  background-color: #40a5a2;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.login-form {
+  display: flex;
+  flex-direction: column;
+  width: 380px;
+  padding: 30px 30px 30px 30px;
+  margin-right: 3rem;
+  margin-top: 4rem;
+  border-radius: 20px;
+  background-color: #ffffff;
+  gap: 20px;
+}
+
+.login-form h1 {
+  color: #02274c;
+  font-size: 30px;
+  font-weight: 600;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.form-data {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-data label {
+  padding-bottom: 5px;
+  color: #091520;
+}
+
+.form-data input {
+  padding: 15px;
+  border-radius: 30px;
+  border: 1px solid #ccc;
+  outline: none;
+}
+
+.check {
+  display: flex;
+  flex-direction: row;
+}
+
+.checkmark {
+  top: 0;
+  left: 0;
+  height: 25px;
+  width: 25px;
+  background-color: #eee;
+  cursor: pointer;
+}
+
+.check a {
+  color: #00a5df;
+}
+
+.check p {
+  color: #091520;
+}
+
+.form-button {
+  font-size: 1.1rem;
+  font-weight: bold;
+  padding: 10px 20px;
+  border-radius: 25px;
+  background-color: #02274c;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.form-button i {
+  margin-left: 5px;
+}
+
+.services {
+  display: flex;
+  justify-content: space-between;
+  background-color: #f0f9f9;
+  padding: 6rem 3rem;
+}
+
+.services p {
+  margin: 0;
+  line-height: 1.5;
+  color: #091520;
+}
+
+.services h2 {
+  margin-top: 2rem;
+  color: #163651;
+}
+
+.start-up,
+.finance,
+.risk {
+  display: flex;
+  flex-direction: column;
+}
+
+.circle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 70px;
+  height: 70px;
+  background-color: #40a5a2;
+  border-radius: 50%;
+}
+
+@media only screen and (max-width: 700px) {
+  .nav-details-data ul {
+    width: 100%;
+    background-color: #ffffff;
+    position: absolute;
+    top: 75px;
+    right: 0;
+    z-index: 2;
+  }
+  .nav-details-data ul li {
+    display: block;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+
+  .menu-icon {
+    display: block;
+  }
+
+  #menuList {
+    overflow: hidden;
+    transition: 0.5s;
+  }
+}
